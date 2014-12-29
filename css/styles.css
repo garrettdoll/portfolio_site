@@ -24,18 +24,61 @@ div {
 }
 
 
+.ui.menu {
+
+	height: 75px;
+
+}
+
+
+.ui.menu .item {
+
+	position: relative;
+	display: inline-block;
+	padding: 0.83em 3.95em;
+	border-top: 0em solid transparent;
+	background: none;
+	vertical-align: middle;
+	line-height: 4;
+	text-decoration: none;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: opacity 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+	transition: opacity 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+
+}
 
 
 
 
 
+/* Below WAS the line inbetween each nav item, i didn't want that so changed width to 0px */
+
+.ui.menu .item:before {
+
+	position: absolute;
+	content: '';
+	top: 0%;
+	right: 0px;
+	width: 0px;
+	height: 100%;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 100%);
+	background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 100%);
+
+}
 
 
 
-
-
-
-
+.ui.menu .active.item {
+	background: rgba(0, 0, 0, 0.03);
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: normal;
+	box-shadow: 0em 2px 0em inset;
+}
 
 
 /* Background pattern from subtlepatterns.com */
