@@ -9,6 +9,12 @@ body {
 
 
 
+p {
+
+	margin: 5% 10%;
+
+}
+
 
 img {
 
@@ -17,17 +23,25 @@ img {
 
 }
 
+.slick-slide > img {
+	
+	width:100%;
+	height: auto;
+
+}
+
+
 
 .ui.grid {
 
-	margin: 0 10%;
+	margin: 5% 10%;
 
 }
 
 
 .ui.menu {
 
-	height: 75px;
+	height: 50px;
 
 }
 
@@ -40,7 +54,7 @@ img {
 	border-top: 0em solid transparent;
 	background: none;
 	vertical-align: middle;
-	line-height: 4;
+	line-height: 2;
 	text-decoration: none;
 	box-sizing: border-box;
 	-webkit-tap-highlight-color: transparent;
